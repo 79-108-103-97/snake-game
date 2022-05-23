@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vh + 1vw);
+}
+
+@font-face {
+    font-family: Ink_Free;
+    src: url("../font/ink-free.ttf");
+    font-weight: bold;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2C2C2C;
+}
+
+.score {
+    background-color: black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score .scoreCount {
+    display: block;
+    font-size: 20px;
+    color: #C7E755;
+    padding: 10px;
+    font-family: Ink_Free, serif;
+}
+
+.gameArea {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' fill='black'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%23343434'/%3E%3C/svg%3E ");
+    box-shadow: 0px 0px 50px #000000;
+}
